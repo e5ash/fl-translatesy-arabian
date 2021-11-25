@@ -1,39 +1,39 @@
 @font-face {
   font-family: "San Francisco Text";
-  src: url("SanFranciscoText-Regular.eot");
-  src: url("SanFranciscoText-Regular.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Regular.woff2") format("woff2"), url("SanFranciscoText-Regular.woff") format("woff"), url("SanFranciscoText-Regular.ttf") format("truetype"), url("SanFranciscoText-Regular.svg#SanFranciscoText-Regular") format("svg");
+  src: url("../fonts/SanFranciscoText-Regular.eot");
+  src: url("../fonts/SanFranciscoText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Regular.woff2") format("woff2"), url("../fonts/SanFranciscoText-Regular.woff") format("woff"), url("../fonts/SanFranciscoText-Regular.ttf") format("truetype"), url("../fonts/SanFranciscoText-Regular.svg#SanFranciscoText-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "San Francisco Text";
-  src: url("SanFranciscoText-Heavy.eot");
-  src: url("SanFranciscoText-Heavy.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Heavy.woff2") format("woff2"), url("SanFranciscoText-Heavy.woff") format("woff"), url("SanFranciscoText-Heavy.ttf") format("truetype"), url("SanFranciscoText-Heavy.svg#SanFranciscoText-Heavy") format("svg");
+  src: url("../fonts/SanFranciscoText-Heavy.eot");
+  src: url("../fonts/SanFranciscoText-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Heavy.woff2") format("woff2"), url("../fonts/SanFranciscoText-Heavy.woff") format("woff"), url("../fonts/SanFranciscoText-Heavy.ttf") format("truetype"), url("../fonts/SanFranciscoText-Heavy.svg#SanFranciscoText-Heavy") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "San Francisco Text";
-  src: url("SanFranciscoText-Medium.eot");
-  src: url("SanFranciscoText-Medium.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Medium.woff2") format("woff2"), url("SanFranciscoText-Medium.woff") format("woff"), url("SanFranciscoText-Medium.ttf") format("truetype"), url("SanFranciscoText-Medium.svg#SanFranciscoText-Medium") format("svg");
+  src: url("../fonts/SanFranciscoText-Medium.eot");
+  src: url("../fonts/SanFranciscoText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Medium.woff2") format("woff2"), url("../fonts/SanFranciscoText-Medium.woff") format("woff"), url("../fonts/SanFranciscoText-Medium.ttf") format("truetype"), url("../fonts/SanFranciscoText-Medium.svg#SanFranciscoText-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "San Francisco Text";
-  src: url("SanFranciscoText-Bold.eot");
-  src: url("SanFranciscoText-Bold.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Bold.woff2") format("woff2"), url("SanFranciscoText-Bold.woff") format("woff"), url("SanFranciscoText-Bold.ttf") format("truetype"), url("SanFranciscoText-Bold.svg#SanFranciscoText-Bold") format("svg");
+  src: url("../fonts/SanFranciscoText-Bold.eot");
+  src: url("../fonts/SanFranciscoText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Bold.woff2") format("woff2"), url("../fonts/SanFranciscoText-Bold.woff") format("woff"), url("../fonts/SanFranciscoText-Bold.ttf") format("truetype"), url("../fonts/SanFranciscoText-Bold.svg#SanFranciscoText-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "San Francisco Text";
-  src: url("SanFranciscoText-Semibold.eot");
-  src: url("SanFranciscoText-Semibold.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Semibold.woff2") format("woff2"), url("SanFranciscoText-Semibold.woff") format("woff"), url("SanFranciscoText-Semibold.ttf") format("truetype"), url("SanFranciscoText-Semibold.svg#SanFranciscoText-Semibold") format("svg");
+  src: url("../fonts/SanFranciscoText-Semibold.eot");
+  src: url("../fonts/SanFranciscoText-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Semibold.woff2") format("woff2"), url("../fonts/SanFranciscoText-Semibold.woff") format("woff"), url("../fonts/SanFranciscoText-Semibold.ttf") format("truetype"), url("../fonts/SanFranciscoText-Semibold.svg#SanFranciscoText-Semibold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -50,13 +50,14 @@ html, body {
 }
 
 body {
-  color: #000000;
+  color: #767676;
   font-size: 15px;
   font-family: "San Francisco Text", sans-serif;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   font-weight: 400;
+  user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,7 +78,7 @@ li {
 }
 
 a {
-  color: #000000;
+  color: #767676;
   text-decoration: none;
   outline: none;
   transition: 0.3s;
@@ -166,4 +167,355 @@ img, svg, path, circle, rect, line {
 
 .right {
   margin-left: auto;
+}
+
+html, body, main, .wrap, .scenes, .scenes__list, .scenes__item {
+  height: 100%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn.--md {
+  font-size: 18px;
+  font-weight: 600;
+  height: 60px;
+}
+.btn.--blue {
+  color: #fff;
+  border-radius: 16px;
+  background-color: #4E89FB;
+}
+
+.scenes__list {
+  position: relative;
+  overflow: hidden;
+}
+.scenes__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 105px;
+  background-color: #fff;
+}
+.main__google {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo__wrap {
+  position: relative;
+  height: 252px;
+  padding-top: 105px;
+}
+.logo__icon {
+  z-index: 1;
+  position: relative;
+}
+.logo__icon svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo__earth {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 375px;
+  height: 252px;
+  transform: translateX(-50%);
+}
+.logo__name {
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 12px;
+  color: #444444;
+}
+
+.sec {
+  z-index: 20;
+  background-color: #111023;
+}
+.sec.--show {
+  transform: translateY(0%);
+}
+.sec__controls {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 32px;
+  align-items: center;
+}
+.sec__back {
+  cursor: pointer;
+}
+.sec__dots {
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sec__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #C9C9C9;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.sec__dot.--current {
+  cursor: default;
+  background-color: #4E89FB;
+}
+.sec__list {
+  height: 100%;
+}
+.sec__next {
+  position: absolute;
+  bottom: 27px;
+  left: 25px;
+  right: 25px;
+}
+
+.slides {
+  display: flex;
+}
+.slides__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 100%;
+  padding: 0 25px 0;
+}
+.slides__item:nth-of-type(1) {
+  margin-left: -100%;
+}
+
+.slide__title {
+  color: #4E89FB;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  max-width: 315px;
+  text-align: center;
+  height: 75px;
+}
+.slide__inner {
+  width: 100%;
+  max-width: 315px;
+  height: 330px;
+}
+.slide__text {
+  line-height: 17px;
+  color: #fff;
+  text-align: center;
+  max-width: 315px;
+  height: 72px;
+  margin-top: 53px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fetures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #101020;
+}
+.fetures__list {
+  max-width: 272px;
+  width: 100%;
+}
+.fetures__item {
+  margin-bottom: 12px;
+}
+.fetures__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.feture {
+  position: relative;
+  display: flex;
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1px solid #F4F4F4;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+}
+.feture__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+.feture__name {
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 23px;
+  font-weight: 700;
+  text-align: center;
+  min-width: 132px;
+}
+.feture__label {
+  z-index: 1;
+  position: absolute;
+  right: -5px;
+  bottom: -7px;
+  text-align: center;
+}
+
+.label {
+  width: 64px;
+  height: 34px;
+}
+.label__text {
+  z-index: 1;
+  position: relative;
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 8px;
+  padding-top: 9px;
+}
+.label__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.label__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.b {
+  border-radius: 25px;
+  border: 3px solid #5F86EE;
+  background-color: #fff;
+}
+
+.translater {
+  height: 100%;
+  padding-top: 20px;
+}
+.translater__item {
+  padding: 0 15px 20px;
+}
+.translater__item.--from {
+  height: 156px;
+}
+.translater__item.--to {
+  height: calc(100% - 156px - 68px);
+}
+.translater__desc {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C9C9C9;
+  letter-spacing: -0.3px;
+  margin-bottom: 2px;
+}
+.translater__lang {
+  width: 100%;
+  max-width: 168px;
+}
+.translater__text {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C9C9C9;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+.translater__pick {
+  margin-top: 9px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  padding: 3px 11px 3px 3px;
+  border-radius: 20px;
+  background-color: #5F86EE;
+}
+.lang__icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.lang__icon img {
+  width: 100%;
+  height: 100%;
+}
+.lang__icon u {
+  display: none;
+}
+.lang__name {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  width: 100%;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.t-swith {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.t-swith:before, .t-swith:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #C9C9C9;
+}
+.t-swith__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  min-width: 68px;
+  height: 26px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 50px;
+  border: 1px solid #C9C9C9;
+}
+.t-swith__title {
+  color: #C9C9C9;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin-left: 4px;
 }

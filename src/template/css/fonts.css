@@ -1,7 +1,7 @@
 @font-face {
   font-family: "San Francisco Text";
   src: url("../fonts/SanFranciscoText-Regular.eot");
-  src: url("../fonts/SanFranciscoText-Regular.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Regular.woff2") format("woff2"), url("SanFranciscoText-Regular.woff") format("woff"), url("SanFranciscoText-Regular.ttf") format("truetype"), url("SanFranciscoText-Regular.svg#SanFranciscoText-Regular") format("svg");
+  src: url("../fonts/SanFranciscoText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Regular.woff2") format("woff2"), url("../fonts/SanFranciscoText-Regular.woff") format("woff"), url("../fonts/SanFranciscoText-Regular.ttf") format("truetype"), url("../fonts/SanFranciscoText-Regular.svg#SanFranciscoText-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "San Francisco Text";
   src: url("../fonts/SanFranciscoText-Heavy.eot");
-  src: url("../fonts/SanFranciscoText-Heavy.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Heavy.woff2") format("woff2"), url("SanFranciscoText-Heavy.woff") format("woff"), url("SanFranciscoText-Heavy.ttf") format("truetype"), url("SanFranciscoText-Heavy.svg#SanFranciscoText-Heavy") format("svg");
+  src: url("../fonts/SanFranciscoText-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Heavy.woff2") format("woff2"), url("../fonts/SanFranciscoText-Heavy.woff") format("woff"), url("../fonts/SanFranciscoText-Heavy.ttf") format("truetype"), url("../fonts/SanFranciscoText-Heavy.svg#SanFranciscoText-Heavy") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "San Francisco Text";
   src: url("../fonts/SanFranciscoText-Medium.eot");
-  src: url("../fonts/SanFranciscoText-Medium.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Medium.woff2") format("woff2"), url("SanFranciscoText-Medium.woff") format("woff"), url("SanFranciscoText-Medium.ttf") format("truetype"), url("SanFranciscoText-Medium.svg#SanFranciscoText-Medium") format("svg");
+  src: url("../fonts/SanFranciscoText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Medium.woff2") format("woff2"), url("../fonts/SanFranciscoText-Medium.woff") format("woff"), url("../fonts/SanFranciscoText-Medium.ttf") format("truetype"), url("../fonts/SanFranciscoText-Medium.svg#SanFranciscoText-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 @font-face {
   font-family: "San Francisco Text";
   src: url("../fonts/SanFranciscoText-Bold.eot");
-  src: url("../fonts/SanFranciscoText-Bold.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Bold.woff2") format("woff2"), url("SanFranciscoText-Bold.woff") format("woff"), url("SanFranciscoText-Bold.ttf") format("truetype"), url("SanFranciscoText-Bold.svg#SanFranciscoText-Bold") format("svg");
+  src: url("../fonts/SanFranciscoText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Bold.woff2") format("woff2"), url("../fonts/SanFranciscoText-Bold.woff") format("woff"), url("../fonts/SanFranciscoText-Bold.ttf") format("truetype"), url("../fonts/SanFranciscoText-Bold.svg#SanFranciscoText-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 @font-face {
   font-family: "San Francisco Text";
   src: url("../fonts/SanFranciscoText-Semibold.eot");
-  src: url("../fonts/SanFranciscoText-Semibold.eot?#iefix") format("embedded-opentype"), url("SanFranciscoText-Semibold.woff2") format("woff2"), url("SanFranciscoText-Semibold.woff") format("woff"), url("SanFranciscoText-Semibold.ttf") format("truetype"), url("SanFranciscoText-Semibold.svg#SanFranciscoText-Semibold") format("svg");
+  src: url("../fonts/SanFranciscoText-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SanFranciscoText-Semibold.woff2") format("woff2"), url("../fonts/SanFranciscoText-Semibold.woff") format("woff"), url("../fonts/SanFranciscoText-Semibold.ttf") format("truetype"), url("../fonts/SanFranciscoText-Semibold.svg#SanFranciscoText-Semibold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
