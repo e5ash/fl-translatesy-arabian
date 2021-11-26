@@ -81,7 +81,7 @@ block content
 												u ?
 											.lang__name Arabic
 										.translater__area
-											.translater__text
+											.translater__text.rtl مرحبا, كيف حالك ؟
 									.translater__switch.t-swith
 										.t-swith__inner
 											.t-swith__icon
@@ -113,17 +113,19 @@ block content
 											.lang__name English (UK)
 										.translater__area
 											.translater__pick.pick
-												.pick__box
+												.pick__inner
 													.pick__lines
 														.pick__line
 														.pick__line
 													.pick__border
 													.pick__img
 														img(src="uploads/ball.jpg" alt="")
+													.pick__flash
 												.pick__desc Basketball
 										.translater__function.t-fun.--photo
 											.t-fun__icon
-											.t-fun__title
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 605.113 605.113" style="enable-background:new 0 0 605.113 605.113;" xml:space="preserve"><path d="M529.473,113.459h-56.729l-18.91-37.82C442.695,53.628,436.91,37.82,416.016,37.82H189.097c-20.895,0-27.797,18.04-37.82,37.819l-18.91,37.82H75.639C33.867,113.459,0,147.326,0,189.098v302.556c0,41.771,33.867,75.639,75.639,75.639h453.835c41.771,0,75.639-33.867,75.639-75.639V189.098C605.111,147.327,571.244,113.459,529.473,113.459z M302.556,491.654c-83.543,0-151.278-67.734-151.278-151.277s67.735-151.278,151.278-151.278c83.543,0,151.278,67.735,151.278,151.278S386.1,491.654,302.556,491.654z"/><path d="M302.556,226.918c-62.667,0-113.459,50.792-113.459,113.459c0,62.668,50.792,113.459,113.459,113.459c62.667,0,113.459-50.791,113.459-113.459S365.223,226.918,302.556,226.918z"/></svg>
+											.t-fun__title new photo
 									.translater__switch.t-swith
 										.t-swith__inner
 											.t-swith__icon
@@ -138,20 +140,12 @@ block content
 											.lang__name Arabic
 											.lang__drop
 												img(src="uploads/chevron-down.svg" alt="")
-										.translater__area 
+										.translater__area
+											.translater__text.rtl كرة السلة
 								.translater__photo.t-photo
-									.t-photo__img
-										img(src="uploads/camera.png" alt="")
-									.t-photo__box
-										.t-photo__area
-										.t-photo__box
-											.t-photo__lines
-												.t-photo__line
-												.t-photo__line
-											.t-photo__border
+									.t-photo__inner
 										.t-photo__img
 											img(src="uploads/ball.jpg" alt="")
-										.t-photo__flash
 						.slide__text Point your camera on any object and how it’s called in any language
 					.slides__item.slide
 						.slide__title
@@ -165,10 +159,13 @@ block content
 												img(src="uploads/flag-uk.png" alt="")
 												u ?
 											.lang__name English (US)
+											.lang__drop
+												img(src="uploads/chevron-down.svg" alt="")
 										.translater__area
 											.translater__question Food Court
 										.translater__function.t-fun.--audio
 											.t-fun__icon
+												<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.000000 512.000000"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M1495 5110 c-214 -33 -430 -144 -586 -299 -133 -133 -227 -298 -280 -491 -23 -84 -23 -92 -27 -697 l-3 -613 -240 0 c-221 0 -243 -2 -279 -20 -72 -37 -80 -67 -80 -307 0 -215 9 -332 36 -463 138 -667 700 -1196 1373 -1291 l91 -13 0 -308 0 -308 -390 0 c-372 0 -393 -1 -430 -20 -45 -23 -80 -80 -80 -130 0 -50 35 -107 80 -130 38 -20 57 -20 970 -20 913 0 932 0 970 20 45 23 80 80 80 130 0 50 -35 107 -80 130 -37 19 -58 20 -430 20 l-390 0 0 308 0 308 91 13 c636 90 1178 569 1349 1192 43 159 52 237 57 505 5 251 5 262 -16 302 -14 28 -35 49 -61 62 -36 18 -58 20 -279 20 l-240 0 -3 613 c-4 587 -5 615 -25 687 -58 209 -148 367 -286 504 -136 136 -297 227 -487 275 -97 25 -307 36 -405 21z m302 -306 c150 -31 275 -99 382 -207 98 -99 160 -207 199 -341 16 -56 17 -135 17 -936 0 -710 -3 -885 -14 -930 -71 -285 -299 -506 -583 -564 -400 -83 -799 182 -882 586 -14 67 -16 187 -16 903 0 714 2 836 16 903 83 404 481 669 881 586z m-1194 -2251 c8 -231 55 -388 167 -561 145 -225 361 -378 640 -455 109 -29 371 -29 480 0 404 111 677 384 782 783 14 52 21 123 25 233 l6 157 150 0 150 0 -6 -167 c-14 -389 -138 -678 -401 -938 -201 -199 -415 -313 -696 -372 -118 -24 -382 -24 -500 0 -284 59 -504 178 -705 381 -159 160 -259 320 -324 520 -47 142 -63 238 -68 414 l-6 162 150 0 150 0 6 -157z"/></g></svg>
 									.translater__switch.t-swith
 										.t-swith__inner
 											.t-swith__icon
@@ -183,19 +180,20 @@ block content
 											.lang__name Arabic
 											.lang__drop
 												img(src="uploads/chevron-down.svg" alt="")
-										.translater__area
+										.translater__area.rtl
 											.translater__answer محكمة الغذاء
 								.translater__audio.t-audio
 									.t-audio__girl
-										//- img(src="uploads/" alt="")
+										video(autoplay="" loop="")
+											source(src="uploads/voice.mp4" type="video/mp4")
 									.t-audio__micro.micro
+										.micro__icon
+											<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.000000 512.000000"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#5F86EE" stroke="none"><path d="M1495 5110 c-214 -33 -430 -144 -586 -299 -133 -133 -227 -298 -280 -491 -23 -84 -23 -92 -27 -697 l-3 -613 -240 0 c-221 0 -243 -2 -279 -20 -72 -37 -80 -67 -80 -307 0 -215 9 -332 36 -463 138 -667 700 -1196 1373 -1291 l91 -13 0 -308 0 -308 -390 0 c-372 0 -393 -1 -430 -20 -45 -23 -80 -80 -80 -130 0 -50 35 -107 80 -130 38 -20 57 -20 970 -20 913 0 932 0 970 20 45 23 80 80 80 130 0 50 -35 107 -80 130 -37 19 -58 20 -430 20 l-390 0 0 308 0 308 91 13 c636 90 1178 569 1349 1192 43 159 52 237 57 505 5 251 5 262 -16 302 -14 28 -35 49 -61 62 -36 18 -58 20 -279 20 l-240 0 -3 613 c-4 587 -5 615 -25 687 -58 209 -148 367 -286 504 -136 136 -297 227 -487 275 -97 25 -307 36 -405 21z m302 -306 c150 -31 275 -99 382 -207 98 -99 160 -207 199 -341 16 -56 17 -135 17 -936 0 -710 -3 -885 -14 -930 -71 -285 -299 -506 -583 -564 -400 -83 -799 182 -882 586 -14 67 -16 187 -16 903 0 714 2 836 16 903 83 404 481 669 881 586z m-1194 -2251 c8 -231 55 -388 167 -561 145 -225 361 -378 640 -455 109 -29 371 -29 480 0 404 111 677 384 782 783 14 52 21 123 25 233 l6 157 150 0 150 0 -6 -167 c-14 -389 -138 -678 -401 -938 -201 -199 -415 -313 -696 -372 -118 -24 -382 -24 -500 0 -284 59 -504 178 -705 381 -159 160 -259 320 -324 520 -47 142 -63 238 -68 414 l-6 162 150 0 150 0 6 -157z"/></g></svg>
 										.micro__lines
 											.micro__line
 											.micro__line
 											.micro__line
 											.micro__line
-										.micro__img
-											img(src="uploads/voice-search.png" alt="")
 						.slide__text
 					.slides__item.slide
 						.slide__title Learn new languages
