@@ -24,64 +24,72 @@ block content
 					.sec__back
 						<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976311 8.68342 -0.0976311 8.29289 0.292893L9.70711 1.70711ZM1 9L0.292893 8.29289C-0.0976311 8.68342 -0.0976311 9.31658 0.292893 9.70711L1 9ZM8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071C10.0976 17.3166 10.0976 16.6834 9.70711 16.2929L8.29289 17.7071ZM8.29289 0.292893L0.292893 8.29289L1.70711 9.70711L9.70711 1.70711L8.29289 0.292893ZM0.292893 9.70711L8.29289 17.7071L9.70711 16.2929L1.70711 8.29289L0.292893 9.70711Z" fill="#4E89FB"/></svg>
 					.sec__dots.row
-						.sec__dot.--current
+						.sec__dot
+						.sec__dot
 						.sec__dot
 						.sec__dot
 						.sec__dot
 						.sec__dot
 				.sec__list.slides
-					.slides__item.slide
+					.slides__item.slide(data-slide="fetures" data-timeout="6000")
 						.slide__title Enjoy all Translate tools and content
 						.slide__inner
 							.fetures
 								.fetures__list
 									.fetures__item.feture
-										.feture__icon
-											img(src="uploads/chat.svg" alt="")
-										.feture__name Text translation
+										.feture__inner
+											.feture__icon
+												img(src="uploads/chat.svg" alt="")
+											.feture__name Text translation
 									.fetures__item.feture
-										.feture__icon
-											img(src="uploads/camera.svg" alt="")
-										.feture__name Object recognition
+										.feture__inner
+											.feture__icon
+												img(src="uploads/camera.svg" alt="")
+											.feture__name Object recognition
 									.fetures__item.feture
-										.feture__icon
-											img(src="uploads/voice.svg" alt="")
-										.feture__name Voice translation
-										.feture__label.label
-											.label__text COMING <br>SOON
-											.label__icon
-												<svg width="64" height="34" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.255 2.87383H59.1757V10.0491H63.255V2.87383Z" fill="#3965EB"/><path d="M63.255 2.87359C63.255 2.11147 62.9522 1.38056 62.4133 0.841656C61.8744 0.302753 61.1435 0 60.3814 0L59.1757 0V5.74719H60.3814C61.1435 5.74719 61.8744 5.44444 62.4133 4.90553C62.9522 4.36663 63.255 3.63572 63.255 2.87359Z" fill="#0F46B1"/><path d="M11.1857 34.0005C10.9767 34.0006 10.7697 33.9144 10.5766 33.7467L-0.745178 19.5005L10.5765 5.25516C10.7696 5.08719 10.9766 5.00065 11.1857 5.00049H63.2548V30.9798C63.2548 31.7809 63.1028 32.5492 62.8321 33.1157C62.5614 33.6822 62.1942 34.0005 61.8114 34.0005H11.1857Z" fill="#3965EB"/></svg>
+										.feture__inner
+											.feture__icon
+												img(src="uploads/voice.svg" alt="")
+											.feture__name Voice translation
+											.feture__label.label
+												.label__text COMING <br>SOON
+												.label__icon
+													<svg width="64" height="34" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.255 2.87383H59.1757V10.0491H63.255V2.87383Z" fill="#3965EB"/><path d="M63.255 2.87359C63.255 2.11147 62.9522 1.38056 62.4133 0.841656C61.8744 0.302753 61.1435 0 60.3814 0L59.1757 0V5.74719H60.3814C61.1435 5.74719 61.8744 5.44444 62.4133 4.90553C62.9522 4.36663 63.255 3.63572 63.255 2.87359Z" fill="#0F46B1"/><path d="M11.1857 34.0005C10.9767 34.0006 10.7697 33.9144 10.5766 33.7467L-0.745178 19.5005L10.5765 5.25516C10.7696 5.08719 10.9766 5.00065 11.1857 5.00049H63.2548V30.9798C63.2548 31.7809 63.1028 32.5492 62.8321 33.1157C62.5614 33.6822 62.1942 34.0005 61.8114 34.0005H11.1857Z" fill="#3965EB"/></svg>
 									.fetures__item.feture
-										.feture__icon
-											img(src="uploads/book.svg" alt="")
-										.feture__name Learn languages
-										.feture__label.label
-											.label__text COMING <br>SOON
-											.label__icon
-												<svg width="64" height="34" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.255 2.87383H59.1757V10.0491H63.255V2.87383Z" fill="#3965EB"/><path d="M63.255 2.87359C63.255 2.11147 62.9522 1.38056 62.4133 0.841656C61.8744 0.302753 61.1435 0 60.3814 0L59.1757 0V5.74719H60.3814C61.1435 5.74719 61.8744 5.44444 62.4133 4.90553C62.9522 4.36663 63.255 3.63572 63.255 2.87359Z" fill="#0F46B1"/><path d="M11.1857 34.0005C10.9767 34.0006 10.7697 33.9144 10.5766 33.7467L-0.745178 19.5005L10.5765 5.25516C10.7696 5.08719 10.9766 5.00065 11.1857 5.00049H63.2548V30.9798C63.2548 31.7809 63.1028 32.5492 62.8321 33.1157C62.5614 33.6822 62.1942 34.0005 61.8114 34.0005H11.1857Z" fill="#3965EB"/></svg>
+										.feture__inner
+											.feture__icon
+												img(src="uploads/book.svg" alt="")
+											.feture__name Learn languages
+											.feture__label.label
+												.label__text COMING <br>SOON
+												.label__icon
+													<svg width="64" height="34" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.255 2.87383H59.1757V10.0491H63.255V2.87383Z" fill="#3965EB"/><path d="M63.255 2.87359C63.255 2.11147 62.9522 1.38056 62.4133 0.841656C61.8744 0.302753 61.1435 0 60.3814 0L59.1757 0V5.74719H60.3814C61.1435 5.74719 61.8744 5.44444 62.4133 4.90553C62.9522 4.36663 63.255 3.63572 63.255 2.87359Z" fill="#0F46B1"/><path d="M11.1857 34.0005C10.9767 34.0006 10.7697 33.9144 10.5766 33.7467L-0.745178 19.5005L10.5765 5.25516C10.7696 5.08719 10.9766 5.00065 11.1857 5.00049H63.2548V30.9798C63.2548 31.7809 63.1028 32.5492 62.8321 33.1157C62.5614 33.6822 62.1942 34.0005 61.8114 34.0005H11.1857Z" fill="#3965EB"/></svg>
 									.fetures__item.feture
-										.feture__icon
-											img(src="uploads/world.svg" alt="")
-										.feture__name Explore cultures
-										.feture__label.label
-											.label__text COMING <br>SOON
-											.label__icon
-												<svg width="64" height="34" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.255 2.87383H59.1757V10.0491H63.255V2.87383Z" fill="#3965EB"/><path d="M63.255 2.87359C63.255 2.11147 62.9522 1.38056 62.4133 0.841656C61.8744 0.302753 61.1435 0 60.3814 0L59.1757 0V5.74719H60.3814C61.1435 5.74719 61.8744 5.44444 62.4133 4.90553C62.9522 4.36663 63.255 3.63572 63.255 2.87359Z" fill="#0F46B1"/><path d="M11.1857 34.0005C10.9767 34.0006 10.7697 33.9144 10.5766 33.7467L-0.745178 19.5005L10.5765 5.25516C10.7696 5.08719 10.9766 5.00065 11.1857 5.00049H63.2548V30.9798C63.2548 31.7809 63.1028 32.5492 62.8321 33.1157C62.5614 33.6822 62.1942 34.0005 61.8114 34.0005H11.1857Z" fill="#3965EB"/></svg>
+										.feture__inner
+											.feture__icon
+												img(src="uploads/world.svg" alt="")
+											.feture__name Explore cultures
+											.feture__label.label
+												.label__text COMING <br>SOON
+												.label__icon
+													<svg width="64" height="34" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.255 2.87383H59.1757V10.0491H63.255V2.87383Z" fill="#3965EB"/><path d="M63.255 2.87359C63.255 2.11147 62.9522 1.38056 62.4133 0.841656C61.8744 0.302753 61.1435 0 60.3814 0L59.1757 0V5.74719H60.3814C61.1435 5.74719 61.8744 5.44444 62.4133 4.90553C62.9522 4.36663 63.255 3.63572 63.255 2.87359Z" fill="#0F46B1"/><path d="M11.1857 34.0005C10.9767 34.0006 10.7697 33.9144 10.5766 33.7467L-0.745178 19.5005L10.5765 5.25516C10.7696 5.08719 10.9766 5.00065 11.1857 5.00049H63.2548V30.9798C63.2548 31.7809 63.1028 32.5492 62.8321 33.1157C62.5614 33.6822 62.1942 34.0005 61.8114 34.0005H11.1857Z" fill="#3965EB"/></svg>
 						.slide__text Holo offers complete multicultural <br>experience
-					.slides__item.slide
+					.slides__item.slide(data-slide="text" data-timeout="8000")
 						.slide__title Text translation
 						.slide__inner
 							.translater.b
 								.translater__inner
 									.translater__item.--from
 										.translater__desc From
-										.translater__lang.lang
+										.translater__lang.lang.--detected
 											.lang__icon
 												img(src="uploads/flag-uae.png" alt="")
 												u ?
-											.lang__name Arabic
+											.lang__name 
+												u Detected language
+												span Arabic
 										.translater__area
-											.translater__text.rtl مرحبا, كيف حالك ؟
+											.translater__text.rtl.hidden-text-for-step(data-type="letter" data-text="مرحبا, كيف حالك ؟")
 									.translater__switch.t-swith
 										.t-swith__inner
 											.t-swith__icon
@@ -93,13 +101,15 @@ block content
 											.lang__icon
 												img(src="uploads/flag-uk.png" alt="")
 												u ?
-											.lang__name English (UK)
+											.lang__name 
+												u Detected language
+												span English (UK)
 											.lang__drop
 												img(src="uploads/chevron-down.svg" alt="")
 										.translater__area
-											.translater__text Hi, how are you?
+											.translater__text.hidden-text-for-step(data-type="word" data-text="Hi, how are you?")
 						.slide__text Communicate instantly in more than 200 languages with auto-detect
-					.slides__item.slide
+					.slides__item.slide(data-slide="camera" data-timeout="10000")
 						.slide__title Camera translation
 						.slide__inner
 							.translater.b
@@ -110,7 +120,9 @@ block content
 											.lang__icon
 												img(src="uploads/flag-uk.png" alt="")
 												u ?
-											.lang__name English (UK)
+											.lang__name 
+												u Detected language
+												span English (UK)
 										.translater__area
 											.translater__pick.pick
 												.pick__inner
@@ -137,17 +149,19 @@ block content
 											.lang__icon
 												img(src="uploads/flag-uae.png" alt="")
 												u ?
-											.lang__name Arabic
+											.lang__name 
+												u Detected language
+												span Arabic
 											.lang__drop
 												img(src="uploads/chevron-down.svg" alt="")
 										.translater__area
-											.translater__text.rtl كرة السلة
+											.translater__text.rtl.hidden-text-for-step(data-type="word" data-text="كرة السلة") 
 								.translater__photo.t-photo
 									.t-photo__inner
 										.t-photo__img
 											img(src="uploads/ball.jpg" alt="")
 						.slide__text Point your camera on any object and how it’s called in any language
-					.slides__item.slide
+					.slides__item.slide(data-slide="voice" data-timeout="8000")
 						.slide__title
 						.slide__inner
 							.translater.b
@@ -158,7 +172,9 @@ block content
 											.lang__icon
 												img(src="uploads/flag-uk.png" alt="")
 												u ?
-											.lang__name English (US)
+											.lang__name 
+												u Detected language
+												span English (US)
 											.lang__drop
 												img(src="uploads/chevron-down.svg" alt="")
 										.translater__area
@@ -166,6 +182,7 @@ block content
 										.translater__function.t-fun.--audio
 											.t-fun__icon
 												<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.000000 512.000000"  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M1495 5110 c-214 -33 -430 -144 -586 -299 -133 -133 -227 -298 -280 -491 -23 -84 -23 -92 -27 -697 l-3 -613 -240 0 c-221 0 -243 -2 -279 -20 -72 -37 -80 -67 -80 -307 0 -215 9 -332 36 -463 138 -667 700 -1196 1373 -1291 l91 -13 0 -308 0 -308 -390 0 c-372 0 -393 -1 -430 -20 -45 -23 -80 -80 -80 -130 0 -50 35 -107 80 -130 38 -20 57 -20 970 -20 913 0 932 0 970 20 45 23 80 80 80 130 0 50 -35 107 -80 130 -37 19 -58 20 -430 20 l-390 0 0 308 0 308 91 13 c636 90 1178 569 1349 1192 43 159 52 237 57 505 5 251 5 262 -16 302 -14 28 -35 49 -61 62 -36 18 -58 20 -279 20 l-240 0 -3 613 c-4 587 -5 615 -25 687 -58 209 -148 367 -286 504 -136 136 -297 227 -487 275 -97 25 -307 36 -405 21z m302 -306 c150 -31 275 -99 382 -207 98 -99 160 -207 199 -341 16 -56 17 -135 17 -936 0 -710 -3 -885 -14 -930 -71 -285 -299 -506 -583 -564 -400 -83 -799 182 -882 586 -14 67 -16 187 -16 903 0 714 2 836 16 903 83 404 481 669 881 586z m-1194 -2251 c8 -231 55 -388 167 -561 145 -225 361 -378 640 -455 109 -29 371 -29 480 0 404 111 677 384 782 783 14 52 21 123 25 233 l6 157 150 0 150 0 -6 -167 c-14 -389 -138 -678 -401 -938 -201 -199 -415 -313 -696 -372 -118 -24 -382 -24 -500 0 -284 59 -504 178 -705 381 -159 160 -259 320 -324 520 -47 142 -63 238 -68 414 l-6 162 150 0 150 0 6 -157z"/></g></svg>
+											.t-fun__title tap <br>and hold
 									.translater__switch.t-swith
 										.t-swith__inner
 											.t-swith__icon
@@ -177,14 +194,14 @@ block content
 											.lang__icon
 												img(src="uploads/flag-uae.png" alt="")
 												u ?
-											.lang__name Arabic
-											.lang__drop
-												img(src="uploads/chevron-down.svg" alt="")
+											.lang__name 
+												u Detected language
+												span Arabic
 										.translater__area.rtl
 											.translater__answer محكمة الغذاء
 								.translater__audio.t-audio
 									.t-audio__girl
-										video(autoplay="" loop="")
+										video
 											source(src="uploads/voice.mp4" type="video/mp4")
 									.t-audio__micro.micro
 										.micro__icon
@@ -195,7 +212,7 @@ block content
 											.micro__line
 											.micro__line
 						.slide__text
-					.slides__item.slide
+					.slides__item.slide(data-slide="learn" data-timeout="10000")
 						.slide__title Learn new languages
 						.slide__inner
 							.essentials.b
@@ -278,7 +295,7 @@ block content
 												.essential__quote ﴿لَمْيَلِدْ وَلَمْيُولَدْ وَلَمْيَكُن لَّهُ كُفُوًا أَحَدٌ﴾
 												.essential__text “...and do not obey one whose heart <br>We have made heedless of Our <br>remembrance and who follows his <br>desire and whose affair is ever <br>[in] neglect”. (18:28)
 						.slide__text Learn new languages with exclusive courses which include videos, quizzes and contextual content
-					.slides__item.slide
+					.slides__item.slide(data-slide="culture" data-timeout="6000")
 						.slide__title Discover other cultures
 						.slide__inner
 							.culture.b

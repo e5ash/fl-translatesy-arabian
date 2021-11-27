@@ -85,7 +85,8 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 .sec
 	z-index: 20
 	background-color: #111023
-	// transform: translateY(100%)
+	transform: translateY(100%)
+	transition: .3s
 	// TODO: SHOW
 	&.--show
 		transform: translateY(0%) 
@@ -98,7 +99,7 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		padding: 0 32px
 		align-items: center
 	&__back
-		cursor: pointer
+		// cursor: pointer
 	&__dots
 		padding-right: 10px
 		margin-left: auto
@@ -110,7 +111,7 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		background: #C9C9C9
 		margin-left: 6px
 		margin-right: 6px
-		cursor: pointer
+		// cursor: pointer
 		&.--current
 			cursor: default
 			background-color: $blue
@@ -126,6 +127,7 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 
 .slides
 	display: flex
+	transition: .3s
 	&__item
 		display: flex
 		align-items: center
@@ -135,11 +137,10 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		min-width: 100%
 		padding: 0 25px 0
 		&:nth-of-type(1)
-			margin-left: -500%
+			// margin-left: -500%2
 
 
 .slide
-	
 	&__title
 		color: $blue
 		font-size: 22px
@@ -178,25 +179,40 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		max-width: 272px
 		width: 100%
 	&__item
-		margin-bottom: 12px
+		margin-bottom: 5px
 		&:last-of-type
 			margin-bottom: 0
 
 
+$step: 0.2s
+
 .feture
 	position: relative
-	display: flex
-	padding: 7px 16px
-	border-radius: 8px
-	border: 1px solid #F4F4F4
-	background-color: #fff
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07)
+	overflow: hidden
+	min-height: 47px
+	transition: 1s
+	width: 0
+	margin-right: -5px
+	transition-delay: 0.2s
+	&__inner
+		display: flex
+		background-color: #fff
+		border-radius: 8px
+		border: 1px solid #F4F4F4
+		padding: 7px 16px
+		min-height: 40px
+		margin-right: 5px
+		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07)
 	&__icon
 		display: flex
 		align-items: center
 		justify-content: center
+		min-width: 24px
 		width: 24px
 		height: 24px
+		img
+			transition: transform .8s
+			transform: scale(0) rotate(-100deg)
 	&__name
 		font-size: 16px
 		line-height: 21px
@@ -204,13 +220,20 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		font-weight: 700
 		text-align: center
 		min-width: 132px
+		white-space: nowrap
 	&__label
 		z-index: 1
 		position: absolute
-		right: -5px
-		bottom: -7px
+		left: 208px
 		text-align: center
 
+	&.--show
+		width: 100%
+		.feture
+			&__icon
+				img
+					transition-delay: 0.3s
+					transform: scale(1) rotate(0deg)
 
 .label
 	width: 64px
@@ -286,6 +309,8 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		margin-top: 10px
 		position: relative
 		font-size: 13px
+		transform: scale(0)
+		transition: .5s
 		&:after
 			content: ''
 			position: absolute
@@ -294,6 +319,8 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 			width: 34px
 			height: 40px
 			background: url('../imgs/triangle.svg')
+		&.--show
+			transform: scale(1)
 
 	&__area
 		&.rtl
@@ -306,6 +333,10 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		padding: 8px 10px
 		background-color: #E5E5E5
 		display: inline-block
+		transform: scale(0)
+		transition: .5s
+		&.--show
+			transform: scale(1)
 		
 .lang
 	display: flex
@@ -319,20 +350,102 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		min-width: 16px
 		border: 1px solid #fff
 		border-radius: 50%
+		position: relative
+		overflow: hidden
 		img
+			z-index: 2
+			position: relative
 			width: 100%
 			height: 100%
+			transition: .3s
+			transform: scale(1)
 		u
-			display: none
+			// opacity: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			border-radius: 50%
+			font-size: 11px
+			color: #fff
+			font-weight: 700
+			transition: .3s
+			color: #8F8B90
+			background-color: #C3BFC4
+			transform: scale(0)
 	&__name
 		font-size: 14px
 		line-height: 18px
 		color: #fff
 		font-weight: 500
 		letter-spacing: -0.3px
-		width: 100%
+		width: calc(100% - 24px)
 		white-space: nowrap
 		margin-left: 8px
+		overflow: hidden
+		position: relative
+		u
+			position: absolute
+			top: 50%
+			left: 0
+			transition: .6s
+			opacity: 0
+			transform: translate(-100%, -50%)
+		span
+			transition: .6s
+			display: inline-block
+			transform: translateX(0)
+	&__drop
+		position: relative
+		top: 1px
+	&.--detected
+		background-color: #8F8B90
+		.lang
+			&__icon
+				u
+					transform: scale(1)
+				img
+					transform: scale(0)
+			&__name
+				u
+					opacity: 1
+					transform: translate(0, -50%)
+				span
+					opacity: 0
+					transform: translateX(100%)
+		&.--driggeble
+			animation: driggeble .6s infinite
+
+	&.--driggeble-one
+		animation: driggeble-one .6s
+				
+
+@keyframes driggeble
+	0%
+		transform: translateX(-7px)
+	50%
+		transform: translateX(0)
+	100%
+		transform: translateX(-7px)
+
+@keyframes driggeble-one
+	0%
+		transform: translateX(0)
+	50%
+		transform: translateX(-7px)
+	100%
+		transform: translateX(0)
+
+.hidden-text-for-step
+	i
+		opacity: 0
+		transition: .3s
+		&.--show
+			opacity: 1
 
 .t-swith
 	display: flex
@@ -366,15 +479,24 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 
 
 .t-photo
-	display: none
+	z-index: 9
+	position: absolute
+	top: 33px
+	right: 20px
+	width: 36px
+	height: 36px
+	border-radius: 50%
+	overflow: hidden
+	transition: 2s
 	&__inner
 		position: absolute
-		width: 390px
-		height: 405px
+		width: 467px
+		height: 700px
 		top: 50%
 		left: 50%
-		margin-left: 30px
-		margin-top: -30px
+		margin-left: -70px
+		margin-top: 72px
+		transition: 2s
 		transform: translate(-50%, -50%)
 	&__img
 		position: absolute
@@ -382,12 +504,14 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		left: 0
 		right: 0
 		bottom: 0
+		transform: scale(0.7)
+		transition: .3s
 		img
 			width: 100%
 			height: 100%
 			object-fit: cover
 		&:before
-			opacity: 0.6
+			opacity: 0
 			content: ''
 			position: absolute
 			top: 0
@@ -395,11 +519,45 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 			right: 0
 			bottom: 0
 			background: #000
+			transition: .3s
+	&.--show
+		width: 1000px
+		height: 1000px
+		top: -252px
+		right: -262px
+		.t-photo
+			&__inner
+				margin-left: 130px
+				margin-top: -126px
+	&.--darken
+		.t-photo
+			&__img
+				&:before
+					opacity: 0.6
 	&.--center
-		margin-left: 20px
-		margin-top: -80px
-		transform: translate(-50%, -50%) scale(1.2)
+		.t-photo
+			&__img
+				// transition: 1s
+				// transform: scale(1)
+				animation: 2s t-photo-center forwards
+		// margin-left: 20px
+		// margin-top: -80px
+		// transform: translate(-50%, -50%) scale(1.2)
+	&.--hidden-photo
+		.t-photo
+			&__img
+				opacity: 0
+				transition: .3s
 		
+
+@keyframes t-photo-center
+	40%
+		transform: translateY(-10px) scale(0.7)
+	70%
+		transform: translateY(-10px) scale(0.7)
+	100%
+		transform: translateY(-50px) translateX(-18px) scale(0.96)
+		// transform: translateY(-10px) scale(1)
 
 .t-fun
 	display: flex
@@ -409,6 +567,7 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 	top: 34px
 	right: 20px
 	&__icon
+		z-index: 10
 		display: flex
 		align-items: center
 		justify-content: center
@@ -416,8 +575,9 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		width: 36px
 		height: 36px
 		border-radius: 50%
-		background-color: #C5C5C5
+		// background-color: #C5C5C5
 		padding: 8px
+		transition: .3s
 		path
 			fill: #fff
 	&__title
@@ -430,10 +590,29 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		white-space: nowrap
 		transform: translateX(-50%)
 		margin-top: 2px
+	&.--click
+		.t-fun
+			&__icon
+				svg
+					animation: t-fun-click .6s
+	&.--bg
+		.t-fun
+			&__icon
+				background-color: #C5C5C5
 	&.--audio
+		.t-fun
+			&__icon
+				background-color: #C5C5C5
 		svg
 			width: 16px
 
+@keyframes t-fun-click
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(0.8)
+	100%
+		transform: scale(1)
 
 .pick
 	z-index: 10
@@ -457,13 +636,13 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		// transform: scale(1.3) translateX(-20px)2
 	&__img
 		position: absolute
-		width: 390px
-		height: 405px
+		width: 467px
+		height: 700px
 		top: 50%
 		left: 50%
-		margin-left: 20px
-		margin-top: -80px
-		transform: translate(-50%, -50%) scale(1.2)
+		margin-left: 4px
+		margin-top: -90px
+		transform: translate(-50%, -50%) scale(0.7)
 		img
 			width: 100%
 			height: 100%
@@ -504,6 +683,7 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		font-size: 36px
 		padding-left: 20px
 		padding-top: 12px
+		transition: .3s
 
 	&__flash
 		opacity: 0
@@ -514,38 +694,70 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		bottom: 0
 		background: #fff
 
+	&.--show
+		opacity: 1
+		visibility: visible
+
 	&.--zoom
-		width: 260px
-		height: 200px
+		width: 230px
+		height: 180px
+		transition: .2s
 		.pick
 			&__img
-				margin-left: 10px
-				margin-top: -115px
-				transform: translate(-50%, -50%) scale(1.5)
+				// margin-left: 10px
+				// margin-top: -115px
+				transform: translate(-50%, -50%) scale(0.96)
+
+	&.--flash
+		.pick
+			&__flash
+				animation: pick-flash .2s
 	&.--to-content
-		margin-left: -67px
-		margin-top: -52px
+		margin-left: -72px
+		margin-top: -56px
+		transition: .6s
 		transform: translate(-50%, -50%) scale(0.38)
 		.pick
-			// &__line
+			&__desc
+				opacity: 1
+				transition-delay: 1s
 				
 			&__border
 				border-width: 2px
 
+@keyframes pick-flash
+	0%
+		opacity: 0
+	50%
+		opacity: 0.8
+	100%
+		opacity: 0 
 
 .t-audio
+	z-index: 11
 	position: absolute
 	top: 0
 	left: 0
 	right: 0
 	bottom: 0
 	padding-top: 40px
-	background-color: #fff
+	opacity: 0
+	visibility: hidden
+	overflow: hidden
+	transition: .3s
+	&:before
+		content: ''
+		z-index: -1
+		background-color: #fff
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		position: absolute
+		transition: .3s
 	&__girl
 		position: relative
 		&:before
-			// display: none
-			opacity: 0
 			content: ''
 			position: absolute
 			top: 0
@@ -562,6 +774,22 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		top: 47px
 		right: 38px
 		width: 27px
+		transition: .3s
+		transform: scale(0)
+	&.--show
+		transition: .3s
+		opacity: 1
+		visibility: visible
+		border-radius: 0
+		&:before
+			background-color: #fff
+		.t-audio
+			&__micro
+				transition-delay: .4s
+				transform: scale(1)
+	&.--hidde
+		opacity: 0
+		visibility: hidden
 
 
 .micro
@@ -574,19 +802,37 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		height: 10px
 		background-color: $blue
 		border-radius: 10px
+		top: 5px
+		&:nth-of-type(1), &:nth-of-type(2)
+			left: 2px
 		&:nth-of-type(1)
-			left: 5px
-			top: 9px
+			animation: micro-line-left 0.5s infinite
 		&:nth-of-type(2)
-			left: 5px
-			top: 9px
+			animation: micro-line-left 0.5s infinite 0.25s
+		&:nth-of-type(3), &:nth-of-type(4)
+			right: 2px
 		&:nth-of-type(3)
-			right: 5px
-			top: 9px
+			animation: micro-line-right 0.5s infinite
 		&:nth-of-type(4)
-			right: 5px
-			top: 9px
+			animation: micro-line-right 0.5s infinite 0.25s
 
+@keyframes micro-line-left
+	40%
+		opacity: 1
+	100%
+		opacity: 0
+		height: 15px
+		top: 0
+		transform: translateX(-8px) scale(1.2)
+
+@keyframes micro-line-right
+	40%
+		opacity: 1
+	100%
+		opacity: 0
+		height: 15px
+		top: 0
+		transform: translateX(8px) scale(1.2)
 
 .essentials
 	max-width: 267px
@@ -594,6 +840,7 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 	margin-left: auto
 	margin-right: auto
 	&__header
+		z-index: 10
 		display: flex
 		align-items: center
 		position: relative
@@ -626,15 +873,27 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		right: 0
 		bottom: 0
 		padding: 45px 15px 15px
+		background-color: #fff
+		transition: .6s
 		&:nth-of-type(1)
+			z-index: 1
 			// opacity: 1
 			padding-top: 45px
+			transform: translateY(100%)
 		&:nth-of-type(2)
+			z-index: 2
 			// opacity: 1
 			padding-top: 25px
 		&:nth-of-type(3)
-			opacity: 1
+			z-index: 3
 			padding-top: 35px
+			transform: translateX(100%)
+		&.--show
+			opacity: 1
+			transform: translate(0%)
+		&.--hide
+			opacity: 0
+			transition: .3s
 
 .essential
 	&__count
@@ -685,13 +944,15 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 	&__list
 		height: 100%
 		position: relative
+		display: flex
+		flex-direction: row-reverse
+		transition: .6s
 	&__item
-		position: absolute
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0
-		opacity: 0
+		position: relative
+		min-width: 100%
+		height: 100%
+		border-radius: 22px
+		overflow: hidden
 		&:nth-of-type(1)
 			// opacity: 1
 		&:nth-of-type(2)
@@ -703,20 +964,25 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 
 .abu
 	&__text
-		z-index: 1
+		z-index: 2
 		position: relative
 		text-align: center
 		font-weight: 700
 	&__title
+		z-index: 2
 		font-size: 30px
 		line-height: 36px
 		color: #fff
 		padding-top: 5px
+		opacity: 0
+		transition: 0.5s linear
+		position: relative
+		top: 0
+		// transition-delay: 0.5s
 		strong
 			display: block
 			font-size: 40px
 			// line-height: 42px
-		
 	&__bg
 		top: 0
 		left: 0
@@ -727,7 +993,10 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 			width: 100%
 			height: 100%
 			object-fit: cover
+			transition: 3s
+			// transition-delay: 0.5s
 		&:before
+			z-index: 1
 			opacity: 0.3
 			content: ''
 			position: absolute
@@ -737,23 +1006,57 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 			bottom: 0
 			background: #000
 
+	&.--show
+		.abu
+			&__title
+				opacity: 1
+				top: 40px
+			&__bg
+				img
+					transform: scale(1.2)
+
 
 .must
 	text-align: center
 	padding-top: 34px
 	&__item
 		margin-bottom: 40px
+		&:nth-of-type(1)
+			.abu__title
+				transition-delay: 0.5s
+		&:nth-of-type(2)
+			.abu__title
+				transition-delay: 1s
 	&__title
 		font-size: 23px
 		color: #A3A3A3
 		text-transform: uppercase
 		margin-bottom: 15px
+		transition: .5s
 	&__desc
 		font-size: 22px
 		line-height: 24px
 		color: #769DEE
 		font-weight: 900
 		text-transform: uppercase
+	&.--show
+		.must
+			&__item
+				&:nth-of-type(1)
+					.must__title
+						animation: textPulse 1s 0.5s
+				&:nth-of-type(2)
+					.must__title
+						animation: textPulse 1s 1.5s
+
+@keyframes textPulse
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(1.2)
+	100%
+		transform: scale(1)
+
 
 .dishes
 	&__text
@@ -772,6 +1075,9 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 		left: 0
 		right: 0
 		bottom: -40px
+		transition: 3s
+		transition-delay: 0.5s
+		transform: translateY(20px)
 		img
 			width: 100%
 			height: 100%
@@ -785,3 +1091,11 @@ html, body, main, .wrap, .scenes, .scenes__list, .scenes__item
 			right: 0
 			bottom: 0
 			background-color: #3A3A3A
+	&.--show
+		.dishes
+			&__bg
+				transform: translateY(-20px)
+
+
+.wrap
+	opacity: 1
