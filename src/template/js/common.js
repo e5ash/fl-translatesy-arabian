@@ -31,12 +31,12 @@ class App {
 	}
 
 	start() {
-		// setTimeout(()=>{
+		setTimeout(()=>{
 			this.scenes.sec.classList.add(cls.show);
 			
-			this.setCurrent(3);
-			// this.nextSlide();
-		// }, 6000);
+			this.setCurrent();
+			this.nextSlide();
+		}, 6000);
 	}
 
 	setSlidesProperties() {
