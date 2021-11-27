@@ -31,12 +31,12 @@ class App {
 	}
 
 	start() {
-		// setTimeout(()=>{
+		setTimeout(()=>{
 			this.scenes.sec.classList.add(cls.show);
 			
-			this.setCurrent(2);
-			// this.nextSlide();
-		// }, 6000);
+			this.setCurrent();
+			this.nextSlide();
+		}, 6000);
 	}
 
 	setSlidesProperties() {
@@ -227,43 +227,43 @@ class App {
 			this.current.slide.inners.translater.photo.classList.add('--show');
 		}, 1800);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.photo.classList.add('--center');
-		// }, 2500);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.photo.classList.add('--center');
+		}, 2500);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.photo.classList.add('--darken');
-		// }, 4300);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.photo.classList.add('--darken');
+		}, 4300);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.pick.classList.add('--show');
-		// }, 4300);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.pick.classList.add('--show');
+		}, 4300);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.pick.classList.add('--zoom');
-		// }, 4300);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.pick.classList.add('--zoom');
+		}, 4300);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.pick.classList.add('--flash');
-		// }, 4400);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.pick.classList.add('--flash');
+		}, 4400);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.photo.classList.add('--hidden-photo');
-		// 	this.current.slide.inners.translater.func.classList.add('--bg');
-		// 	this.current.slide.inners.translater.pick.classList.add('--to-content');
-		// }, 4700);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.photo.classList.add('--hidden-photo');
+			this.current.slide.inners.translater.func.classList.add('--bg');
+			this.current.slide.inners.translater.pick.classList.add('--to-content');
+		}, 4700);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.itemLangFrom.classList.add('--driggeble-one');
-		// }, 5300);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.itemLangFrom.classList.add('--driggeble-one');
+		}, 5300);
 
-		// setTimeout(()=>{
-		// 	this.current.slide.inners.translater.itemLangTo.classList.add('--driggeble-one');
-		// }, 6000);
+		setTimeout(()=>{
+			this.current.slide.inners.translater.itemLangTo.classList.add('--driggeble-one');
+		}, 6000);
 
-		// setTimeout(()=>{
-		// 	hiddenTextForStep.show(this.current.slide.inners.translater.hiddenTexts[0]);
-		// }, 6300);
+		setTimeout(()=>{
+			hiddenTextForStep.show(this.current.slide.inners.translater.hiddenTexts[0]);
+		}, 6300);
 	}
 
 	startAnimationTranslaterVoice() {
@@ -273,7 +273,7 @@ class App {
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.audio.classList.add('--show');
-			this.current.slide.inners.translater.audioVideoEl.play();
+			// this.current.slide.inners.translater.audioVideoEl.play();
 		}, 1500);
 
 		setTimeout(()=>{
@@ -358,9 +358,7 @@ let hiddenTextForStep = {
 hiddenTextForStep.init();
 
 new App();
-// setTimeout(()=>{
-	// scenes.sec.classList.add(cls.show);
-// }, 6000);
+
 
 // setTimeout(()=>{
 // 	slides[0].classList.add(cls.current);
