@@ -229,41 +229,41 @@ class App {
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.photo.classList.add('--center');
-		}, 2500);
+		}, 2700);
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.photo.classList.add('--darken');
-		}, 4300);
+		}, 4500);
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.pick.classList.add('--show');
-		}, 4300);
+		}, 4500);
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.pick.classList.add('--zoom');
-		}, 4300);
+		}, 4500);
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.pick.classList.add('--flash');
-		}, 4400);
+		}, 4700);
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.photo.classList.add('--hidden-photo');
 			this.current.slide.inners.translater.func.classList.add('--bg');
 			this.current.slide.inners.translater.pick.classList.add('--to-content');
-		}, 4700);
+		}, 4900);
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.itemLangFrom.classList.add('--driggeble-one');
-		}, 5300);
+		}, 5500);
 
 		setTimeout(()=>{
 			this.current.slide.inners.translater.itemLangTo.classList.add('--driggeble-one');
-		}, 6000);
+		}, 6200);
 
 		setTimeout(()=>{
 			hiddenTextForStep.show(this.current.slide.inners.translater.hiddenTexts[0]);
-		}, 6300);
+		}, 6500);
 	}
 
 	startAnimationTranslaterVoice() {
