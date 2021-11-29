@@ -23,10 +23,19 @@ class App {
 			slide: null,
 			index: 0
 		};
+		this.btnNext = document.querySelector('.sec__next');
 
 		this.setSlidesProperties();
 
 		this.start();
+
+		this.btnNext.addEventListener('click', (e)=>{
+
+			if (this.current.index < 5) {
+				e.preventDefault();
+				this.nextSlide();
+			}
+		});
 
 	}
 
@@ -35,7 +44,6 @@ class App {
 			this.scenes.sec.classList.add(cls.show);
 			
 			this.setCurrent();
-			this.nextSlide();
 		}, 6000);
 	}
 
@@ -97,11 +105,8 @@ class App {
 		let next = this.slides.items[nextIndex];
 
 		if (next) {
-			setTimeout(()=>{
-				this.removeCurrentClasses();
-				this.setCurrent(nextIndex);
-				this.nextSlide();
-			}, this.current.slide.dataTimeout);
+			this.removeCurrentClasses();
+			this.setCurrent(nextIndex);
 		}
 	}
 
