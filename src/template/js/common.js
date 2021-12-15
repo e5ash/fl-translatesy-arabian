@@ -40,11 +40,11 @@ class App {
 	}
 
 	start() {
-		// setTimeout(()=>{
+		setTimeout(()=>{
 			this.scenes.sec.classList.add(cls.show);
 			
 			this.setCurrent();
-		// }, 6000);
+		}, 6000);
 	}
 
 	setSlidesProperties() {
