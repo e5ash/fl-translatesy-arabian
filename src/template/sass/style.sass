@@ -156,6 +156,7 @@ main, .wrap, .scenes, .scenes__list, .scenes__item
 		max-width: 315px
 		text-align: center
 		height: 50px
+		direction: rtl
 		background-color: #111023
 	&__inner
 		width: 100%
@@ -170,6 +171,7 @@ main, .wrap, .scenes, .scenes__list, .scenes__item
 		text-align: center
 		max-width: 315px
 		height: 72px
+		direction: rtl
 		margin-top: 15px
 		margin-left: auto
 		margin-right: auto
@@ -326,7 +328,7 @@ $step: 0.2s
 		font-size: 13px
 		transform: scale(0)
 		transition: .5s
-		margin-right: auto
+		margin-right: 63px
 		&:after
 			content: ''
 			position: absolute
@@ -704,6 +706,9 @@ $step: 0.2s
 		padding-left: 20px
 		padding-top: 12px
 		transition: .3s
+		direction: rtl
+		white-space: nowrap
+		margin-right: -460px
 
 	&__flash
 		opacity: 0
@@ -880,6 +885,7 @@ $step: 0.2s
 			letter-spacing: -0.3px
 			padding-left: 20px
 			color: rgba(255,255,255,0.8)
+			direction: rtl
 		&-flag
 			border: 4px solid #fff
 			width: 48px
@@ -1020,8 +1026,8 @@ $step: 0.2s
 		// transition-delay: 0.5s
 		strong
 			display: block
-			font-size: 72px
-			line-height: 86px
+			font-size: 48px
+			line-height: 48px
 			font-weight: 900
 			// line-height: 42px
 	&__bg
