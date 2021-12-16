@@ -43,7 +43,7 @@ class App {
 		// setTimeout(()=>{
 			this.scenes.sec.classList.add(cls.show);
 			
-			this.setCurrent();
+			this.setCurrent(4);
 		// }, 6000);
 	}
 
